@@ -130,11 +130,11 @@ def sample_block_parser():
 def main():
       # sample_block_parser()  
       # blocks = get_all_blockheaders(BLKDIR)
-      # f = open('all_blockheaders.pkl', 'wb') # the final blockhash in this pkl is '00000000000000000355f2dae74e2f6eaee07314702efee154873f2c461b7591'
+      # f = open('../cardinal-blocktools-data/all_blockheaders.pkl', 'wb') # the final blockhash in this pkl is '00000000000000000355f2dae74e2f6eaee07314702efee154873f2c461b7591'
       # pkl.dump(blocks, f)
       # f.close()
 
-      f = open('all_blockheaders.pkl', 'rb')
+      f = open('../cardinal-blocktools-data/all_blockheaders.pkl', 'rb')
       all_blocks = pkl.load(f)
       f.close()
       blocks = get_mainchain_blocks(all_blocks, BLKHASH_FINAL)
